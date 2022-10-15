@@ -12,18 +12,70 @@
     </nav>
     <main>
         <h2>Vacation Contest Sign-Up Form</h2>
-        <form> <!-- TODO: Set Action and Method Properties -->
+        <form action="results.html" method="get"> <!-- TODO: Set Action and Method Properties -->
             <div>
                 <label for="firstname">Your First Name</label>
                 <input type="text" id="firstname" name="firstname">
                 <!-- TODO: Create a "lastname" input with type "text" -->
+                <label for="lastname">Your Last Name</label>
+                <input type="text" id="lastname" name="lastname">     
             </div>
             <!-- TODO: Make fieldset and legend -->
-            <!-- Todo: Email Input -->
-            <!-- Todo: Street Address Input -->
-            <!-- Todo: City, State, and Zip Inputs -->
+             <fieldset>  
+                 <legend>Your Contact Info</legend>
+             <!-- Todo: Email Input -->
+                <label for="email">Your Emai:l</label>
+                <input type="text" id="email" name="email">            
+             <!-- Todo: Street Address Input -->
+             <label for="Street Adress">Street Adress:</label>
+                <input type="text " id="Street Adress">
+        <!-- Todo: City, State, and Zip Inputs -->
+        <label for="city"> City:</label>
+        <input type="text" id="city" name="city">
+        <select name="state" id="state">
+            <option value="AK">Alaska</option>
+            <option value="AL">alabama</option>
+            <option value="CA">California</option>
+            <option value="ID">Idaho</option>
+            <option value="NY">New York</option>
+            <option value="HI">Hawaii</option>
+            <option value="NC">North Carolina</option>
+        </select>
+        <label for="Zip code">Zip code:</label>
+        <input type="text" name="Zip code" id="Zip code">
 
+            </fieldset>
+        </form>
             <!-- TODO: Second fieldset -->
+            <fieldset>
+                <legend> your Preferences</legend>
+                <h3>Choose your Location</h3>
+            <div>
+                 <input type="Radio" name="Location" id="aruba" value="Aruba">
+                <label for="aruba">Aruba</label>                 
+            </div>
+            <div>
+                <input type="Radio" name="Location" id="japan" value="japan">
+               <label for="japan">Japan</label>                 
+           </div>
+           <div>
+            <input type="Radio" name="Location" id="aruba" value="new zeland">
+           <label for="new zeland">New Zeland</label>                 
+       </div>
+       <div>
+        <input type="Radio" name="Location" id="united states" value="united states">
+       <label for="united states">United States</label>                 
+   </div>
+   <div>
+    <input type="Radio" name="Location" id="europe" value="europe">
+   <label for="Europe">Europe</label>                 
+</div>
+
+
+        
+
+            </fieldset>
+
             <!-- TODO: Radio buttons for selecting preferred destination -->
             <!-- TODO: Color input for selecting favorite color -->
             <!-- TODO: Checkboxes for selecting extra add-ons -->
